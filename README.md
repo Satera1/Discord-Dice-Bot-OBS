@@ -8,11 +8,13 @@ The use of the programme necessarily requires the use of the [OBS Studio](https:
 The [OBS Studio](https://obsproject.com/download)  programme will be used to broadcast the live stream and scroll the data on the screen, while [Discord](https://discord.com/download) will be needed to activate the commands used to scroll the data on the screen.
 In addition, you will need to install [Python](https://www.python.org/downloads/) and an [IDE](https://code.visualstudio.com/download) (I highly recommend using [Visual Studio Code](https://code.visualstudio.com/download)) to run this programme locally.
 # Downloads
-[Python](https://www.python.org/downloads/)
-[Visual Studio Code](https://code.visualstudio.com/download) *or another IDE*
-[OBS Studio](https://obsproject.com/download)
-[OBS Studio Plugin](https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-using-websockets.466/) *obs-websocket-remote-control*
-[Discord](https://discord.com/download)
+
+ - [Python](https://www.python.org/downloads/)
+ - [Visual Studio Code](https://code.visualstudio.com/download) *or another IDE* 
+ - [OBS Studio](https://obsproject.com/download)
+ - [OBS Studio Plugin](https://obsproject.com/forum/resources/obs-websocket-remote-control-obs-studio-using-websockets.466/) *obs-websocket-remote-control*
+ - [Discord](https://discord.com/download)
+
 # How to use
 ## Creating your Discord bot
 Once you've installed everything you need, you'll need to create a Discord bot that will intermediate the commands you type into OBS Studio. To do this, go [HERE](https://discord.com/developers/applications) and click on ***NEW APPLICATION*** to create your Bot, very simple, isn't it? Now all you have to do is go to the **OAuth2 tab** and tick all the boxes and copy and paste the generated URL into your browser to **invite the Bot to your Discord server** (we strongly recommend that you don't share this link and that you only invite it to a private server, i.e. only to people who will be able to use the application's commands).
@@ -40,3 +42,4 @@ Once you've done that, just run the '**bot.py**' file and **start using it!**
     '!r' (example: !r 3d6)
 
     '!ping' (Show your ping)
+
