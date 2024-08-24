@@ -2,7 +2,7 @@ import asyncio
 import simpleobsws
 
 #OBS Configs. (match scene, host, port and pasword)
-async def create_dice_source(roll, scene_name = 'Screen' , host='127.0.0.1', port=4444, password='rolldice', loop=None): #<--- Download WebSockets plugin on OBS and change your configs. here.
+async def create_dice_source(roll, scene_name = 'Screen' , host='127.0.0.1', port=4444, password='rolldice', loop=None): #<--- Download WebSockets plugin on OBS and change your configs here.
     if loop is None:
         loop = asyncio.get_event_loop()
 
@@ -29,7 +29,8 @@ async def create_dice_source(roll, scene_name = 'Screen' , host='127.0.0.1', por
                     'height': 1080,  # <--- change source resolution
                     'width': 1920,  # <--- change source resolution
                     'shutdown': True,
-                    'url': 'http://dice.bee.ac/?noresult&dicehex=722f37&labelhex=ffffff&chromahex=00ff00&roll&d='+roll #urldice: resultbghex=fafafa&resulthex=0e1111& #Can be changed in 'http://dice.bee.ac/' website
+                    'url': 'http://dice.bee.ac/?noresult&dicehex=722f37&labelhex=ffffff&chromahex=00ff00&roll&d='+roll #urldice: resultbghex=fafafa&resulthex=0e1111&
+                    #Can be changed in 'http://dice.bee.ac/' website
 
                 }
             }
